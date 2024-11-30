@@ -1,5 +1,5 @@
 # CA_Loc_Insp
-Locations noinated for condition assessment inspections
+Locations nominated for condition assessment inspections
 
 # Street View Image Downloader
 
