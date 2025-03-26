@@ -14,6 +14,9 @@ STREET_VIEW_URL = 'https://maps.googleapis.com/maps/api/streetview'
 METADATA_URL = 'https://maps.googleapis.com/maps/api/streetview/metadata'
 DEFAULT_VIEW_TYPE = 'RV'  # Default view type is Road View
 
+def main():
+    st.set_page_config(page_title="Street View Image Downloader", layout="wide")
+
 def get_panorama_metadata(lat, lon, view_type):
     params = {
         'location': f'{lat},{lon}',
@@ -75,9 +78,6 @@ def download_street_view_image(pano_id, heading, location_name, output_dir):
     else:
         st.error(f"Error fetching image for {location_name}: {response.status_code}")
         return None
-
-def main():
-    st.set_page_config(page_title="Street View Image Downloader", layout="wide")
 
 image_path = "Img1.PNG"
 
