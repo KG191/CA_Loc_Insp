@@ -80,9 +80,9 @@ def main():
     st.set_page_config(page_title="Street View Image Downloader", layout="wide")
 
     image_path = "Img1.png"
-if os.path.exists(image_path):
+    if os.path.exists(image_path):
     st.image(image_path, use_container_width=True)
-else:
+    else:
     st.error(f"Image file '{image_path}' not found.")
     
     # Replace use_column_width with use_container_width to avoid deprecation issues
