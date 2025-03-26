@@ -79,7 +79,7 @@ def download_street_view_image(pano_id, heading, location_name, output_dir):
 def main():
     st.set_page_config(page_title="Street View Image Downloader", layout="wide")
 
-image_path = "Img1.png"
+image_path = "Img1.PNG"
 
 if os.path.exists(image_path):
     st.image(image_path, use_container_width=True)
